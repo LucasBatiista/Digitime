@@ -12,9 +12,7 @@ export default function Home() {
         <title>Home - DIGITIME</title>
         <link href="style/index.css" rel="stylesheet" />
       </Head>
-      <Container>
-        <div>
-            <body class="d-flex flex-column h-100">
+      <Container class="d-flex flex-column h-100">
                 <main class="flex-shrink-0">
                         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                             <div class="container px-5">
@@ -57,8 +55,6 @@ export default function Home() {
                         </div>
                     </div>
                 </footer>
-            </body>
-        </div>
         </Container> 
     </Container>
   )
