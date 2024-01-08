@@ -21,10 +21,10 @@ export default function Home() {
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                                         <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="">Quem somos</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="">Serviços</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="">Provas</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="">Resultados</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/quem-somos">Quem somos</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/provas">Provas</a></li>
+                                        <li class="nav-item"><a class="nav-link" href="/resultados  ">Resultados</a></li>
                                         <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
                                     </ul>
                                 </div>
