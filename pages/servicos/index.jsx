@@ -14,9 +14,9 @@ export default function Servicos() {
       </Head>
       <Container class="d-flex flex-column">
             <main class="flex-shrink-0">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
                             <div class="container px-5">
-                                <img class="img-fluid rounded-3" width="250px" src="/digitime_logo3.png" alt="..." />
+                                <img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." />
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -54,7 +54,7 @@ export default function Servicos() {
                         </div>
                     </section>
                 </main>
-                <footer class="bg-dark py-4 mt-auto">
+                <footer class="fixed-bottom bg-dark py-4 mt-auto">
                     <div class="container px-5">
                         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                             <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2023</div></div>
