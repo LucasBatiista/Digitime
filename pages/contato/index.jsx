@@ -34,7 +34,6 @@ export default function Contato() {
                             <div class="container px-5">
                                 <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                                     <div class="text-center mb-5">
-                                        {/* <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div> */}
                                         <h1 class="fw-bolder">Entre em contato</h1>
                                         <p class="lead fw-normal text-muted mb-0">Subtexto</p>
                                     </div>
