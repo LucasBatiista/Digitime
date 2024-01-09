@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 
 export default function Servicos() {
   return (
-    <Container className="md-container">
+    <>
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -14,7 +14,7 @@ export default function Servicos() {
       </Head>
       <Container class="d-flex flex-column">
             <main class="flex-shrink-0">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                             <div class="container px-5">
                                 <img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." />
                                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
@@ -54,7 +54,7 @@ export default function Servicos() {
                         </div>
                     </section>
                 </main>
-                <footer class="fixed-bottom bg-dark py-4 mt-auto">
+                <footer class="bg-dark py-4 mt-auto">
                     <div class="container px-5">
                         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                             <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2023</div></div>
@@ -62,6 +62,6 @@ export default function Servicos() {
                     </div>
                 </footer>
         </Container> 
-    </Container>
+    </>
   )
 }

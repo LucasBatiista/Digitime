@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 
 export default function Home() {
   return (
-    <Container className="md-container">
+    <>
       <Head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -13,7 +13,7 @@ export default function Home() {
         <link href="style/index.css" rel="stylesheet" />
       </Head>
       <Container class="d-flex flex-column h-100">
-                <main class="flex-shrink-0 fixed-top">
+                <main class="flex-shrink-0">
                         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                             <div class="container px-5">
                                 <img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." />
@@ -48,7 +48,7 @@ export default function Home() {
                             </div>
                         </header>
                     </main>
-                <footer class="fixed-bottom bg-dark py-4 mt-auto">
+                <footer class="bg-dark py-4 mt-auto">
                     <div class="container px-5">
                         <div class="row align-items-center justify-content-between flex-column flex-sm-row">
                             <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2023</div></div>
@@ -56,6 +56,6 @@ export default function Home() {
                     </div>
                 </footer>
         </Container> 
-    </Container>
+    </>
   )
 }

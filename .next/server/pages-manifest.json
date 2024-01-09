@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/resultados": "pages/resultados.js",
-  "/": "pages/index.js",
-  "/provas": "pages/provas.js"
+  "/resultados-react": "pages/resultados-react.js",
+  "/servicos": "pages/servicos.js",
+  "/": "pages/index.js"
 }
