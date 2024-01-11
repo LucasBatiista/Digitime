@@ -9,7 +9,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Home - DIGITIME</title>
+        <title>Quem Somos - DIGITIME</title>
         <link href="style/index.css" rel="stylesheet" />
       </Head>
       <Container class="d-flex flex-column h-100">
