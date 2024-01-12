@@ -1,5 +1,7 @@
 import Head from 'next/head'
-import { Container } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 
 export default function Home() {
   return (
@@ -14,22 +16,22 @@ export default function Home() {
       </Head>
       <Container class="d-flex flex-column h-100">
                 <main class="flex-shrink-0 fixed-top">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <div class="container px-5">
-                                <img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." />
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/quem-somos">Quem somos</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/provas">Provas</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/resultados">Resultados</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
+                    <Navbar expand="lg" className="bg-dark navbar-dark">
+                        <Container>
+                            <Navbar.Brand href="#home"><img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." /></Navbar.Brand>
+                            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                            <Navbar.Collapse id="basic-navbar-nav">
+                                <Nav className="me-auto">
+                                    <Nav.Link href="/">Home</Nav.Link>
+                                    <Nav.Link href="/quem-somos">Quem Somos</Nav.Link>
+                                    <Nav.Link href="/servicos">Serviços</Nav.Link>
+                                    <Nav.Link href="/provas">Provas</Nav.Link>
+                                    <Nav.Link href="/resultados">Resultados</Nav.Link>
+                                    <Nav.Link href="/contato">Contato</Nav.Link>
+                                </Nav>
+                            </Navbar.Collapse>
+                        </Container>
+                    </Navbar>
                         <header class="bg-dark py-5">
                             <div class="container px-5">
                                 <div class="row gx-5 align-items-center justify-content-center">
