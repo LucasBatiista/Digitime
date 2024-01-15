@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import { Container } from 'react-bootstrap'
+import Head from 'next/head';
+import Container from 'react-bootstrap/Container';
+import Layout from '../layout';
 
 export default function Contato() {
   return (
@@ -14,28 +15,13 @@ export default function Contato() {
       </Head>
       <Container class="d-flex flex-column h-100">
                 <main class="flex-shrink-0">
-                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                            <div class="container px-5">
-                                <img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." />
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/quem-somos">Quem somos</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/servicos">Serviços</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/provas">Provas</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/resultados  ">Resultados</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="/contato">Contato</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </nav>
+                    <Layout>
                         <div class="py-5">
                             <div class="container px-5">
                                 <div class="bg-light rounded-3 py-5 px-4 px-md-5 mb-5">
                                     <div class="text-center mb-5">
                                         <h1 class="fw-bolder">Entre em contato</h1>
-                                        <p class="lead fw-normal text-muted mb-0">Subtexto</p>
+                                        <p class="lead fw-normal text-muted mb-0">Mande sua mensagem</p>
                                     </div>
                                     <div class="row gx-5 justify-content-center">
                                         <div class="col-lg-8 col-xl-6">
@@ -77,14 +63,8 @@ export default function Contato() {
                                 </div>
                             </div>
                         </div>
+                    </Layout>
                 </main>
-                <footer class="bg-dark py-4 mt-auto">
-                    <div class="container px-5">
-                        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                            <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2023</div></div>
-                        </div>
-                    </div>
-                </footer>
         </Container> 
     </>
   )
