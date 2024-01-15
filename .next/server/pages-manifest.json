@@ -3,9 +3,9 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/resultados": "pages/resultados.js",
-  "/": "pages/index.js",
   "/provas": "pages/provas.js",
-  "/servicos": "pages/servicos.js",
   "/contato": "pages/contato.js",
-  "/quem-somos": "pages/quem-somos.js"
+  "/servicos": "pages/servicos.js",
+  "/quem-somos": "pages/quem-somos.js",
+  "/": "pages/index.js"
 }
