@@ -6,7 +6,7 @@ function Navbartest() {
     return (
     <Navbar expand="lg" className="bg-dark navbar-dark">
     <Container>
-        <Navbar.Brand href="/"><img class="img-fluid rounded-3" width="170px" src="/digitime_logo3.png" alt="..." /></Navbar.Brand>
+        <Navbar.Brand href="/"><img class="img-fluid rounded-3 logo" width="170px" src="/digitime_semfundo2.png" alt="..." /></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">

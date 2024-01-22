@@ -37,20 +37,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/provas.js"
     ],
-    "/quem-somos": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/quem-somos.js"
-    ],
     "/resultados": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/resultados.js"
-    ],
-    "/servicos": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/servicos.js"
     ]
   },
   "ampFirstPages": []

@@ -311,6 +311,10 @@ svg {
   vertical-align: middle;
 }
 
+.logo {
+  filter: invert(1);
+}
+
 table {
   caption-side: bottom;
   border-collapse: collapse;

@@ -2,10 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/resultados": "pages/resultados.js",
-  "/provas": "pages/provas.js",
+  "/": "pages/index.js",
   "/contato": "pages/contato.js",
-  "/servicos": "pages/servicos.js",
-  "/quem-somos": "pages/quem-somos.js",
-  "/": "pages/index.js"
+  "/resultados": "pages/resultados.js",
+  "/provas": "pages/provas.js"
 }
