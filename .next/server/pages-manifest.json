@@ -5,5 +5,7 @@
   "/": "pages/index.js",
   "/contato": "pages/contato.js",
   "/resultados": "pages/resultados.js",
-  "/provas": "pages/provas.js"
+  "/provas": "pages/provas.js",
+  "/servicos": "pages/servicos.js",
+  "/quem-somos": "pages/quem-somos.js"
 }
