@@ -1,43 +1,16 @@
 import Container from 'react-bootstrap/Container';
 import Layout from '../layout';
 import Button from 'react-bootstrap/Button';
+import { Prisma, PrismaClient } from '@prisma/client';
 import Cards from './cards_prova';
-import Months from './cards_mes';
 
+const prisma = new PrismaClient();
 
-export default function Provas() {
+export default function Provas(props) {
 
-  const events = [
-    { card_title: "Corrida 1", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 2", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 3", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 4", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 5", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 6", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 7", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 8", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 9", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 10", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 11", card_date: "17/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-    { card_title: "Corrida 12", card_date: "20/01", card_event_hour: "07:00 - 10:00", card_adress: "Manaus, Am" },
-  ];
+    const provas = props.provas;
 
-  const months = [
-    {month: "Janeiro 2024"},
-    {month: "Feveiro 2024"},
-    {month: "Março 2024"},
-    {month: "Abril 2024"},
-    {month: "Maio 2024"},
-    {month: "Junho 2024"},
-    {month: "Julho 2024"},
-    {month: "Agosto 2024"},
-    {month: "Setembro 2024"},
-    {month: "Outubro 2024"},
-    {month: "Novembro 2024"},
-    {month: "Dezembro 2024"},
-  ];
-
-  return (
+    return (
     <>
       <Container class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -47,9 +20,9 @@ export default function Provas() {
                 <div class="text-center mb-5">
                   <h1 class="fw-bolder">Confira as próximas provas</h1>
                 </div>
-                <Months months={months} />
-                <Cards events={events} />
-              </div>
+                    {/* {provas?.map((prova, i) => ())} */}
+                    <Cards events={ provas } />
+                </div>
             </section>
           </Layout>
         </main>
@@ -57,3 +30,13 @@ export default function Provas() {
     </>
   )
 }
+
+export async function getServerSideProps() {
+    const allprovas = await prisma.provas.findMany();
+
+    return {
+      props: {
+        provas: JSON.parse(JSON.stringify(allprovas)),
+      },
+    };
+  }
