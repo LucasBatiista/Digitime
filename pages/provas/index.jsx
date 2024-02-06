@@ -32,7 +32,18 @@ export default function Provas(props) {
 }
 
 export async function getServerSideProps() {
-    const allprovas = await prisma.provas.findMany();
+    const allprovas = await prisma.provas.findMany({
+      // where: [
+      //   {
+      //     dia: 
+      //   },
+      // ],
+      orderBy: [
+        {
+          dia: 'asc',
+        },
+      ],
+    });
 
     return {
       props: {

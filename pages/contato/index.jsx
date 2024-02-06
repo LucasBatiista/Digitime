@@ -35,18 +35,18 @@ export default function Contato() {
                                         <div class="col-lg-8 col-xl-6">
                                             <form onSubmit={onSubmit} id="contactForm" data-sb-form-api-token="API_TOKEN">
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                                    <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" autoComplete='given-name'/>
                                                     <label htmlFor="name">Nome Completo</label>
                                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" autoComplete='email'/>
                                                     <label htmlFor="email">Email</label>
                                                     <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
                                                     <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
                                                 </div>
                                                 <div class="form-floating mb-3">
-                                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                                    <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" autoComplete='tel'/>
                                                     <label htmlFor="phone">Celular/Whatsapp</label>
                                                     <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
                                                 </div>

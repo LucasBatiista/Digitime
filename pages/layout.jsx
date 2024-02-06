@@ -30,7 +30,7 @@ function FooterDigitime() {
         <footer class="bg-dark py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2023</div></div>
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Digitime 2024</div></div>
                     <div class="col-auto">
                         <a class="link-light small" href="mailto:digitimeinova@hotmail.com">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
