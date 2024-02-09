@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Container from 'react-bootstrap/Container';
 import Layout from './layout'
+import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 
 export default function Home() {
     return (
@@ -25,6 +27,36 @@ export default function Home() {
                                 </div>
                             </div>
                         </header>
+                        <section class="py-5">
+                            <div class="text-center mb-5">
+                                <h1 class="fw-bolder">Galeria de imagens</h1>
+                            </div>
+                            <div class="container px-5 my-5">
+                                <Carousel data-bs-theme="dark">
+                                    <Carousel.Item>
+                                        <Image src='/slide1.jpg' width="1920" height="720" />
+                                        <Carousel.Caption>
+                                        <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image src='/slide2.jpg' width="1920" height="720" />
+                                        <Carousel.Caption>
+                                        <h3>Second slide label</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                    <Carousel.Item>
+                                        <Image src='/slide3.jpg' width="1920" height="720" />
+                                        <Carousel.Caption>
+                                        <h3>Third slide label</h3>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        </Carousel.Caption>
+                                    </Carousel.Item>
+                                </Carousel>
+                            </div>
+                        </section>
                     </Layout>
                 </main>
             </Container>

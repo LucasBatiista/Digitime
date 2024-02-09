@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Layout from '../layout';
 import Button from 'react-bootstrap/Button';
 import { Prisma, PrismaClient } from '@prisma/client';
-import Cards from './cards_prova';
+import Cards from '../../components/cards_prova';
 
 const prisma = new PrismaClient();
 
