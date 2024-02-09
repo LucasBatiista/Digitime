@@ -34,24 +34,24 @@ export default function Home() {
                             <div class="container px-5 my-5">
                                 <Carousel data-bs-theme="dark">
                                     <Carousel.Item>
-                                        <Image src='/slide1.jpg' width="1920" height="720" />
+                                        <Image className="d-block w-100 h-50" src='/slide2.jpg' />
                                         <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                        {/* <h3>First slide label</h3>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <Image src='/slide2.jpg' width="1920" height="720" />
+                                        <Image className="d-block w-100 h-50" src='/slide1.jpg'/>
                                         <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        {/* <h3>Second slide label</h3>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                     <Carousel.Item>
-                                        <Image src='/slide3.jpg' width="1920" height="720" />
+                                        <Image className="d-block w-100 h-50" src='/slide3.jpg'/>
                                         <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        {/* <h3>Third slide label</h3>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> */}
                                         </Carousel.Caption>
                                     </Carousel.Item>
                                 </Carousel>
