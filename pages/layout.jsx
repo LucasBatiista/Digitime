@@ -1,7 +1,11 @@
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Head from 'next/head'
+import Head from 'next/head';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 
 function NavbarDigitime() {
@@ -18,8 +22,22 @@ function NavbarDigitime() {
                         <Nav.Link href="/provas">Provas</Nav.Link>
                         <Nav.Link href="/resultados">Resultados</Nav.Link>
                         <Nav.Link href="/contato">Contato</Nav.Link>
-                    </Nav>
+                    </Nav>                
                 </Navbar.Collapse>
+                <Form inline>
+                    <Row>
+                    <Col xs="auto">
+                        <Form.Control
+                        type="text"
+                        placeholder=""
+                        className=" mr-sm-2"
+                        />
+                    </Col>
+                    <Col xs="auto">
+                        <Button type="submit">Pesquisar</Button>
+                    </Col>
+                    </Row>
+                </Form>
             </Container>
         </Navbar>
     )

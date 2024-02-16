@@ -7,10 +7,18 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
 model provas {
-  id    Int       @id
+  id    Int @id
   nome  String?
-  dia   DateTime? @db.Date
-  hora  DateTime? @db.Time(6)
   local String?
+  hora  DateTime? @db.Time(6)
+  dia   DateTime? @db.Date
+}
+
+/// The underlying table does not contain a valid unique identifier and can therefore currently not be handled by Prisma Client.
+model resultados {
+  id   Int @id
+  nome String?
+  link String?
 }

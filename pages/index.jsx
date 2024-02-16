@@ -19,7 +19,7 @@ export default function Home() {
                                             <p class="lead fw-normal text-white-50 mb-4">A DIGITIME INOVA, empresa genuinamente amazonense, atua no ramo de cronometragem eletrônica de eventos esportivos, com a maior tecnologia existente, além de uma equipe especializada e dedicada a produzir resultados com rapidez e confiabilidade.</p>
                                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
                                                 <a class="btn btn-primary btn-lg px-4 me-sm-3" href="/resultados">Resultados de Provas</a>
-                                                {/* <a class="btn btn-outline-light btn-lg px-4" href="">Entrar em contato</a> */}
+                                                <a class="btn btn-outline-light btn-lg px-4" href="/provas">Próximos eventos</a>
                                             </div>
                                         </div>
                                     </div>
